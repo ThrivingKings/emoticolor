@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Color = ({ emotion }) => {
   return (
@@ -31,9 +31,10 @@ const Color = ({ emotion }) => {
         .disgusted {
           background-position: bottom center;
         }
-      `}</style>
+      `}
+      </style>
     </>
-  );
-};
+  )
+}
 
-export default Color;
+export default Color

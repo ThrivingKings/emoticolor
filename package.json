@@ -5,12 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "yarn standard"
   },
   "dependencies": {
     "face-api.js": "^0.20.1",
     "next": "9.0.5",
     "react": "16.9.0",
     "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "standard": "^14.2.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
