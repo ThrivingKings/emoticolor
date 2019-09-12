@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 
 const LABELS = {
-  neutral: 'focused',
-};
+  neutral: 'focused'
+}
 
 const Tally = ({ emotions }) => {
-  const total = Object.values(emotions).reduce((a, b) => a + b, 0);
+  const total = Object.values(emotions).reduce((a, b) => a + b, 0)
   const emotionPercentages = Object.keys(emotions).map(emotion => {
     return { emotion, percent: ((emotions[emotion] / total) * 100).toFixed(1) }
-  });
+  })
 
   return (
     <>
@@ -33,9 +33,10 @@ const Tally = ({ emotions }) => {
           display: inline-block;
           padding: 0 20px;
         }
-      `}</style>
+      `}
+      </style>
     </>
-  );
-};
+  )
+}
 
-export default Tally;
+export default Tally

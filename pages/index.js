@@ -1,26 +1,26 @@
-import React from 'react';
-import Head from 'next/head';
+import React from 'react'
+import Head from 'next/head'
 
-import Emotion from '../components/Emotion';
-import Color from '../components/Color';
-import Tally from '../components/Tally';
+import Emotion from '../components/Emotion'
+import Color from '../components/Color'
+import Tally from '../components/Tally'
 
 class Home extends React.Component {
   state = {
     emotion: null,
-    emotions: {},
+    emotions: {}
   };
 
   handleOnEmotion = emotion => {
-    const emotionValue = this.state.emotions[emotion] || 0;
+    const emotionValue = this.state.emotions[emotion] || 0
     const emotions = {
       ...this.state.emotions,
-      [emotion]: emotionValue + 1,
+      [emotion]: emotionValue + 1
     }
-    this.setState({ emotion, emotions });
+    this.setState({ emotion, emotions })
   }
 
-  render() {
+  render () {
     return (
       <div>
         <Head>
@@ -35,9 +35,10 @@ class Home extends React.Component {
             color: #333;
             margin: 0;
           }
-        `}</style>
+        `}
+        </style>
       </div>
-    );
+    )
   }
 }
 
